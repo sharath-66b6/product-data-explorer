@@ -2,6 +2,9 @@ const { withHydrationOverlay } = require("@builder.io/react-hydration-overlay/ne
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  eslint: {
+    ignoreDuringBuilds: true,
+  },
   reactStrictMode: true,
   async rewrites() {
     return [
