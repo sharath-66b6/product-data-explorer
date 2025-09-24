@@ -8,6 +8,7 @@ import { Review } from './entities/review.entity';
 import { ScrapeJob } from './entities/scrape_job.entity';
 import { ViewHistory } from './entities/view_history.entity';
 import { ScrapeModule } from './modules/scrape/scrape.module';
+import { AppController } from './app.controller';
 
 @Module({
   imports: [
@@ -32,5 +33,7 @@ import { ScrapeModule } from './modules/scrape/scrape.module';
     }),
     ScrapeModule,
   ],
+  controllers: [AppController],
+  providers: [],
 })
 export class AppModule {}
